@@ -6,13 +6,13 @@
 // Ejecutar la función con estos datos
 // Impriman el resultado en la consola
 
-function edadDelUsuario (añoActual, miNacimiento){
-    return añoActual - miNacimiento;
+function calcularEdad (añoActual, miNacimiento){
+    return anioActual - miNacimiento;
 }
-const añoActual = prompt("Que año es?");
+const anioActual = prompt("Que año es?");
 const miNacimiento = prompt("Que año naciste?");
 
-console.log("Tu edad es "+edadDelUsuario(añoActual,miNacimiento));
+console.log("Tu edad es "+calcularEdad(anioActual,miNacimiento));
 
 
 // Preguntar el salario anual y calcular el salario mensual
@@ -22,15 +22,15 @@ console.log("Tu edad es "+edadDelUsuario(añoActual,miNacimiento));
 const salarioAnual = prompt("Cual es tu salario anual?")
 console.log("Tu salario anual es " + salarioAnual);
 
-function tuSalarioMensual(salarioAnual){
+function calcularSalarioAnual(salarioAnual){
     return salarioAnual / 12;
 }
-function tuSalarioSemanal(salarioAnual){
+function calcularSalarioSemanal(salarioAnual){
     return salarioAnual / 52;
 }
-function tuSalarioDiario(salarioAnual){
+function calcularSalarioDiario(salarioAnual){
     return salarioAnual / 365;
 }
-console.log("Tu salario mensual es " + tuSalarioMensual(salarioAnual));
-console.log("Tu salario semanal es " + tuSalarioSemanal(salarioAnual));
-console.log("Tu salario diario es " + tuSalarioDiario(salarioAnual));
+console.log("Tu salario mensual es " + calcularSalarioMensual(salarioAnual));
+console.log("Tu salario semanal es " + calcularSalarioSemanal(salarioAnual));
+console.log("Tu salario diario es " + calcularSalarioDiario(salarioAnual));
